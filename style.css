@@ -1,0 +1,41 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+
+html, body{
+  height: 100%;
+}
+
+body{
+  background-color: linen;
+  display: flex;
+  flex-direction: column;
+  min-height:100%;
+}
+
+main{
+  flex: 1;
+  display: flex;
+}
+
+#canvas_id{
+ border: 5px solid black;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ display: flex;
+ z-index: 1;
+}
+
+@font-face {
+  font-family: 'Pixeloid';
+  src: url('/assets/PixeloidSans-mLxMm.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.text-style {
+  font-family: 'Pixeloid', sans-serif;
+}
