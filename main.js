@@ -33,14 +33,14 @@ var cursors;
 
 var isMoving = false;
 
-var foeSpeed = -100; //up to -350
-var foespawnTime = 3000;// up to 65
+var foeSpeed = -100;
+var foespawnTime = 3000;
 
 var foeSpeedIncrement = -5;
-var foeSpeedMax = -350;
+var foeSpeedMax = -525;
 
 var foespawnTimeDecrement = 80;
-var foespawnTimeMin = 225;
+var foespawnTimeMin = 203;
 
 var playerSpeed = 170;
 
@@ -169,6 +169,7 @@ function spawnCloudM() {
   const newCloudMed = this.physics.add.image(500, Phaser.Math.Between(5, 303), 'cloudMed');
   newCloudMed.setVelocityX(cloudMSpeed);
   cloudMGroup.add(newCloudMed);
+  
 
   newCloudMed.once('outOfBounds', () => newCloudMed.destroy());
 }
